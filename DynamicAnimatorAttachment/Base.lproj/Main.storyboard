@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,36 +18,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="LWr-hi-Q9T">
-                                <rect key="frame" x="28" y="181" width="41" height="40"/>
-                                <autoresizingMask key="autoresizingMask"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="JDy-Bt-5q8">
+                                <rect key="frame" x="121" y="140" width="41" height="40"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="JDy-Bt-5q8">
-                                <rect key="frame" x="121" y="107" width="41" height="40"/>
-                                <autoresizingMask key="autoresizingMask"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="PZB-KY-z9w">
+                                <rect key="frame" x="197" y="80" width="41" height="40"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="PZB-KY-z9w">
-                                <rect key="frame" x="197" y="163" width="41" height="40"/>
-                                <autoresizingMask key="autoresizingMask"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="ydr-Vr-dfC">
+                                <rect key="frame" x="266" y="90" width="41" height="40"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="ydr-Vr-dfC">
-                                <rect key="frame" x="266" y="96" width="41" height="40"/>
-                                <autoresizingMask key="autoresizingMask"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="qi2-Nb-YgO">
+                                <rect key="frame" x="334" y="130" width="41" height="40"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="qi2-Nb-YgO">
-                                <rect key="frame" x="334" y="163" width="41" height="40"/>
-                                <autoresizingMask key="autoresizingMask"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="u6C-1i-v43">
+                                <rect key="frame" x="40" y="120" width="41" height="40"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qi2-Nb-YgO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="110" id="762-uk-MD2"/>
+                            <constraint firstItem="PZB-KY-z9w" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="197" id="7Ui-Dy-BI8"/>
+                            <constraint firstItem="PZB-KY-z9w" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="8HN-kY-jdo"/>
+                            <constraint firstItem="ydr-Vr-dfC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="266" id="M4s-zT-hfG"/>
+                            <constraint firstItem="JDy-Bt-5q8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="121" id="ZYc-Ys-lIR"/>
+                            <constraint firstItem="u6C-1i-v43" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="aRP-Ko-ika"/>
+                            <constraint firstItem="JDy-Bt-5q8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="120" id="mHK-aU-EBF"/>
+                            <constraint firstItem="qi2-Nb-YgO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="334" id="v4u-6i-PK6"/>
+                            <constraint firstItem="ydr-Vr-dfC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="x00-19-lUX"/>
+                            <constraint firstItem="u6C-1i-v43" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="yfB-5f-lFw"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outletCollection property="stars" destination="LWr-hi-Q9T" collectionClass="NSMutableArray" id="jtq-YZ-a6G"/>
                         <outletCollection property="stars" destination="JDy-Bt-5q8" collectionClass="NSMutableArray" id="LQq-z1-p2a"/>
                         <outletCollection property="stars" destination="PZB-KY-z9w" collectionClass="NSMutableArray" id="u9T-gd-uPy"/>
                         <outletCollection property="stars" destination="ydr-Vr-dfC" collectionClass="NSMutableArray" id="dVi-M7-cVl"/>
                         <outletCollection property="stars" destination="qi2-Nb-YgO" collectionClass="NSMutableArray" id="xYR-kH-wGX"/>
+                        <outletCollection property="stars" destination="u6C-1i-v43" collectionClass="NSMutableArray" id="Uzu-Ja-Pa1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
