@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import CoreMotion
 
 class ViewController: UIViewController {
     // MARK: - Variables
@@ -17,7 +16,6 @@ class ViewController: UIViewController {
     private var gravity: UIGravityBehavior!
     private var pushBehavior: UIPushBehavior!
     // MARK: - Constants
-    let motionManager = CMMotionManager()
     let stringLengths: [CGFloat] = [75, 100, 150, 120, 80]
     // MARK: - UIViewController
     override func viewDidLoad() {
@@ -58,7 +56,7 @@ class ViewController: UIViewController {
 
     @objc private func tap(sender: UITapGestureRecognizer) {
         stars.forEach { star in
-            let location = sender.location(in: star)
+            let location = sender.location(in: view)
             if star.bounds.contains(location) {
                 let direction = CGVector(dx: star.center.x - location.x, dy: star.center.y - location.y)
                 if let pushBehavior = self.pushBehavior {
@@ -66,7 +64,7 @@ class ViewController: UIViewController {
                 }
                 self.pushBehavior = UIPushBehavior(items: [star], mode: .instantaneous)
                 self.pushBehavior.pushDirection = direction
-                self.pushBehavior.magnitude = 0.1
+                self.pushBehavior.magnitude = 0.2
                 self.animator.addBehavior(self.pushBehavior)
             }
         }
