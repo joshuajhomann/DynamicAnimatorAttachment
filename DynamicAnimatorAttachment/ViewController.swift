@@ -56,9 +56,9 @@ class ViewController: UIViewController {
 
     @objc private func tap(sender: UITapGestureRecognizer) {
         stars.forEach { star in
-            let location = sender.location(in: view)
+            let location = sender.location(in: star)
             if star.bounds.contains(location) {
-                let direction = CGVector(dx: star.center.x - location.x, dy: star.center.y - location.y)
+                let direction = CGVector(dx: location.x < star.bounds.midX ? 1 : -1, dy: 0)
                 if let pushBehavior = self.pushBehavior {
                     self.animator.removeBehavior(pushBehavior)
                 }
